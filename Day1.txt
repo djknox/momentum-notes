@@ -1,0 +1,51 @@
+Momentum - Cohort 5
+Day 1 - Tuesday, May 28, 2019
+
+/** Command Line / Terminal **/
+Shell - currently using bash, takes in commands and gives back output
+Prompt - where you type commands
+
+Exiting Terminal Commands:
+q
+^c (ctrl + c)
+^d (ctrl + d)
+esc
+
+Exit Vim:
+:q!
+
+tab - command line will try to auto-complete
+
+Make and Remove Directories:
+mkdir (make directory)
+rmdir (remove empty directory)
+rm -rf (remove directory and everything inside it)
+
+Bash Profile
+.bash_profile
+
+
+
+/** Version Control with Git **/
+Working Directory - code is checked out into, current version of code while it's developed (both tracked and untracked)
+Staging Area - code changes that will be committed
+
+git clone <url> - copy remote repo into local repo
+git diff - see changes
+
+Git Workflow:
+1. git add
+2. git commit
+3. git push
+
+Working Directory --> git add --> Staging Area --> git commit --> Local Repository --> git push --> Remote Repo
+
+
+git commit -m 'add commit message here':
+use present tense in commit messages
+
+--help flag will provide man page/additional info on how to use command (ex: git add --help)
+
+git pull - sync changes from remote repo into local repo
+merge conflict - changes done to the same code, git will ask to resolve
+forking - get local copy of remote repo for later creating a pull request to merge back into remote repo
