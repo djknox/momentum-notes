@@ -1,0 +1,29 @@
+Momentum - Cohort 5
+Day 2 - Wednesday, May 29, 2019
+
+Environment Variables:
+.bash_profile
+PATH - where terminal will look for commands
+
+VS Code:
+cmd+shift+p OR option+z to open command palette
+
+/** HTML & CSS **/
+HyperText Markup Language
+markup - system for annotating a document in a way that is syntactically distinguishable from the text
+
+Chrome Dev Console:
+Developer Tools: alt/option + command + i
+JavaScript Console: alt/option + command + j
+
+
+Content of an HTML doc
+<!DOCTYPE html> - version of html for browser
+<html> - root element
+	<head>
+		metadata (link, meta, title, style) - modify the presentation/behavior of the rest of the doc, set up links to other docs, convey other out of band info
+	</head>
+	<body>
+		major structural components of the page
+	</body>
+</html>
