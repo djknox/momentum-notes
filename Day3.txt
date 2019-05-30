@@ -1,0 +1,77 @@
+Momentum - Cohort 5
+Day 3 - Thursday, May 30, 2019
+
+Group C Thursday@1:00pm
+
+/** CSS **/
+Selectors - target specific elements of html document to apply styling
+Each selector has a specificity
+
+Types of selectors
+elements - h1
+classes - .sidebar
+ids - #main-menu
+attributes - [lang=es]
+pseudo-classes - :hover, :required
+pseudo-elements - p::first-letter
+combinations - .sidebar a, ul > li, img + .caption
+
+Properties
+properties set the style of selected elements
+
+Syntax
+selector {
+	property: value;
+}
+
+Hex Codes
+set of three numbers between 0-255 in hexadecimal format (base-16)
+0-9
+A - 10
+B - 11
+C - 12
+D - 13
+E - 14
+F - 15
+
+first number - red
+second number - green
+third number - blue
+
+#FF00A7 - max red, min green, some blue (looks like neon pink)
+#000000 - black
+#FFFFFF - white
+
+other ways to describe colors
+rgb(decimal red, decimal green, decimal blue)
+rgba(decimal red, decimal green, decimal blue, decimal alpha)
+hsl(hue, saturation, lightness)
+hsla(hue, saturation, lightness, alpha)
+
+
+Box Model
+margin
+border
+padding
+content
+
+Units of Measure - best to use px and rem
+px - pixels
+em - relative to the font-size (1em = 1 x font-size, 2em = 2 x font-size), additive
+rem - relative to the base font-size, not additive
+% - percentage, relative to the enclosing element
+
+content-box vs border-box
+box-sizing: content-box;
+box-sizing: border-box; - includes the border and padding inside of the width (more intuitive)
+
+good idea to put the following at the top of every css file:
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+linking an external style sheet to an html page:
+in <head>:
+<link rel="stylesheet" href="style.css">
