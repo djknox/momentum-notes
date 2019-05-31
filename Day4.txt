@@ -1,0 +1,77 @@
+Momentum - Cohort 5
+Day 4 - Thursday, May 31, 2019
+
+/** CSS, continued **/
+CSS Backgrounds
+background property
+body {
+  background:
+     url(background.jpg)      /* background-image */
+     top center / 200px 200px /* background-position / background-size */
+     no-repeat                /* background-repeat */
+     red;                     /* background-color */
+}
+
+background-image
+can be an image file or gradient
+background-image: url(background.jpg)
+background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+background-image: radial-gradient(red, blue)
+
+background-size
+background-size: contain; - image large as possible, but stay within the element
+background-size: cover; - image large as possible and cover the entire element
+
+multiple backgrounds
+specified with commas
+mainly usesful for transparency
+background: linear-gradient(rgba(30, 9, 110, 0.8),rgba(30, 9, 110, 0.8)),
+            no-repeat center/cover url('/assets/img/banner_images/default.jpg');
+
+css layout
+flexbox
+floats
+cssgrid
+
+
+
+/** Responsive Design ** /
+design for mobile - enhance for desktop
+
+three parts:
+flexible, grid-based layout
+flexible images
+media queries via css
+
+making a flexible grid
+use percentages for elements inside your container
+include margins
+for your grid container, consider px/rem for width and % for max-width
+
+flexible images
+img {
+	max-width: 100%;
+}
+
+need in <head> to work well with mobile:
+<meta name="viewport" content="initial-scale=1.0,width=device-width">
+
+media queries
+@media print {}
+@media screen and (max-width: 1024px) {} - if on a screen and screen is at most 1024px, use this css
+use media queries sparingly
+
+where to put break points in media queries
+device screen sizes aren't future proof, but here are the current standards:
+phones: < 768px
+tablets: >= 768px
+desktops: >= 992px
+big desktops: >= 1200px
+
+
+
+
+Other Useful Things:
+cmd + / comments out a line in VSCode
+Dash - app to view docs
+Applications/Digital Color Meter on Mac will tell you colors of pixels on your screen
