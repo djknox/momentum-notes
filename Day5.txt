@@ -1,0 +1,55 @@
+Momentum - Cohort 5
+Day 5 - Monday, June 3, 2019
+
+Group C Tuesday@1:00pm
+
+/** Python **/
+help() will give info on how to use a function
+ex: help(print) will give info on how to use print()
+
+integers, floats, booleans, strings
+triple quotes for multi-line strings
+
+converting between types - built-in functions
+int("2") --> 2
+float("5.5") --> 5.5
+str(9) --> "9"
+int("5.5") --> throws an error
+
+any division will return a float (other than integer division with //)
+6 / 3 --> 2.0
+6 // 3 --> 2
+
+printing to the screen
+print()
+
+getting input from user
+input()
+all user input is a string
+
+variable names are in snake_case
+
+whitespace matters - indent to group statements together in functions, conditionals, etc.
+
+conditionals and loops
+if statements
+if age >= 21:
+	print("You are an adult.")
+	print("You are allowed to drink and vote.")
+elif age >= 18:
+	print("You are an adult.")
+	print("You are allowed to vote but not drink.")
+else:
+	print("You are not allowed to drink or vote.")
+
+while statements
+i = 1
+while i <= 10:
+	print(i)
+	i += 1
+
+use 'and' and 'or' to combine predicates in conditionals
+can use parentheses for grouping
+
+run python apps with python3 app_name.py
+ex: python3 book_cost.py
