@@ -3,7 +3,7 @@ Day 5 - Monday, June 3, 2019
 
 Group C Tuesday@1:00pm
 
-/** Python **/
+/** Python - Day 1 **/
 help() will give info on how to use a function
 ex: help(print) will give info on how to use print()
 
