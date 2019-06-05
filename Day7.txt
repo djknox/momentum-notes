@@ -1,0 +1,52 @@
+Momentum - Cohort 5
+Day 5 - Monday, June 3, 2019
+
+/** Python - Day 3 **/
+Dictionaries
+Files
+
+dictionaries
+map keys to values
+keys are unique
+multiple ways to create a dictionary:
+a = {
+	'first_key': 1,
+	'second_key': 2,
+	'third_key': 3,
+}
+a = dict(first_key=1, second_key=2, third_key=3)
+a = dict([('one', 1), ('two', 2), ('three', 3)])
+a = dict(zip(['one', 'two', 'three'], [1, 2, 3]))
+
+
+working with files
+open files for reading and writing using open()
+open()
+no guarantee that changes are written to disk until the file is closed with close()
+using "with":
+instead of manually closing a file, set up a context in which the file is open using "with"
+with open("jane_eye.txt") as jane_eyre:
+	lines = len(jane_eyre.readlines())
+	print(f"{lines} lines in the file."")
+
+sorting
+sorted()
+sorted(iterable, /, *, key=None, reverse=False)
+    Return a new list containing all items from the iterable in ascending order.
+
+    A custom key function can be supplied to customize the sort order, and the
+    reverse flag can be set to request the result in descending order.
+key
+can provide a function in key to sort after performing the function on each element
+
+algorithm to find the longest word in a sentence
+a_sentence = """You're never too old, and if you want to, as my mother said, you 
+                can do anything you want to, but you have to work at it."""
+sorted(a_sentence.split(), key=str.lower, reverse=True)[0]
+
+lambda - anonymous function (function with no name
+if it's a one-line function and you don't need it anywhere else, you can use lambda - doesn't require a return statement
+can write anonymous functions in sorted() key with lambda
+ex: sorted(a_list, key=lambda num: abs(num - sum(a_list) / len(a_list)))
+
+can return a function from a function
