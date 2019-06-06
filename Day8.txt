@@ -1,0 +1,102 @@
+Momentum - Cohort 5
+Day 8 - Thursday, June 6, 2019
+
+/** Python - Day 4 **/
+Modules
+List comprehensions
+
+modules
+import datetime --> import entire module
+from datetime import date --> import specific functions/types from module
+navigate directories with periods (.):
+	import calculator.scientific
+	or
+	from calculator import scientific
+
+modules will execute when they are imported - to make them only execute when ran directly, add this:
+if __main__ == "__main__":
+	pass
+
+aside:
+"double-underscore" == "dunder"
+example: __main__ --> dunder main
+
+
+init.py
+__init__.py is a file used to mark directories on disk as Python package directories
+to nest modules inside directories (like calculator/scientific.py), need to put an empty __init__.py file in each directory
+
+Pipenv
+pipenv is a tool that installs third-party modules AND tracks which modules are used with a project
+creates a Pipfile and creates a virtualenv
+install a specific module:
+	pipenv install <module_name>
+to install everything a project uses:
+	pipenv install
+
+
+list comprehensions
+transform an iterable's values through another function or filter those values
+returns a list
+can do same things using for loops, but makes it easier/less code
+parts:
+collection - the value that will be collected into the new list
+iteration - how to iterative over the sequence
+selection (optional) -  filters what you use from iteration
+
+for loop:
+output = []
+for x in range(10):
+    output.append(pow(2, x))
+
+same thing as a list comprehension
+[pow(2, x) for x in range(10)]
+
+
+
+
+
+aside:
+use _ as a variable name when the value doesn't matter
+ex: [random.random() for _ in range(5)]
+
+relevant to 'mystery word' assignment:
+word = "MAGNITUDE"
+guesses = ["G", "E", "T"]
+
+[letter if letter in guesses else "_" 
+ for letter in word]
+
+rewritten as function:
+word = "MAGNITUDE"
+current_guesses = ["G", "E", "T"]
+
+def display_letter(letter, guesses):
+    """
+    Conditionally display a letter. If the letter is already in
+    the list `guesses`, then return it. Otherwise, return "_".
+    """
+    if letter in guesses:
+        return letter
+    else:
+        return "_"
+
+[display_letter(letter, current_guesses)
+ for letter in word]
+
+def print_word(word, guesses):
+    output_letters = [display_letter(letter, guesses) 
+                      for letter in word]
+    print(" ".join(output_letters))
+
+
+separate words in a list by certain lengths:
+words = ["cool", "indubitably", "Tehran", 
+         "pineapple", "axolotl", "hamburger", "squat"]
+
+[
+    word                                 # collection
+    for word in words                    # iteration
+    if len(word) >= 6 and len(word) <= 8 # selection
+]
+--> returns ["Tehran", "axolotl"]
