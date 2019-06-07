@@ -1,0 +1,31 @@
+Momentum - Cohort 5
+Day 9 - Friday, June 7, 2019
+
+/** Transloc Panel **/
+bios:
+Patrick Valle:
+This will be his first visit to Momentum. "I've been making software professionally for 12 years. I currently live in Durham with my 2 kids, 2 dogs, 1 cat, and 1 wife."
+
+Dakota Crowder:
+"I'm a Software Engineer and have been with the company since January.  I worked at another SaS company for a number of years, first doing a few internships while still in school then working full time as a web developer for ~2 years before moving to Transloc."
+
+Nathan Hall:
+"I've been a mobile software engineer here at TransLoc for the last 3 years and have seen the company grow from 40 some employees to where we are now with about 120. Before that I was a jack of all trades, master of none type of engineer on a software team of 3."
+
+Jakub Calabek:
+"I am a Senior QA Automation Engineer, and I have been with Transloc for almost three years. I graduated from the University of Technology in the Czech Republic with a degree in software engineering. I moved to Raleigh area in 2015. Before coming to Transloc I held multiple positions within QA."
+
+Jeanette O'Brien:
+"Excited to come back for another panel! I  am a cohort 2 Momentum grad and have been with TransLoc as an associate software engineer since January. I worked in graphic design and marketing before making a pivot to software development."
+admin dispatch team
+
+
+questions:
+for Jeanette - what are some skill gaps that you had coming out of momentum and starting work at transloc?
+for the rest of the panel: what are some skill gaps that you notice in new hires?
+
+what is important when considering a prospective hire? portfolio? github contributions? work experience? education?
+
+what is the hiring process like at transloc? whiteboarding, pair programming, etc?
+
+can you talk about what it means to be a purpose driven company and how that affects your day-to-day work?
