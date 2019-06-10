@@ -1,0 +1,17 @@
+Momentum - Cohort 5
+Day 10 - Monday, June 10, 2019
+
+Group C @1:00pm
+
+/** Review **/
+
+if __name__ == "__main__":
+	# ...
+__name__ == "__main__" in the context of the console
+__name__ is the name of the module (in the console, the module name is "__main__")
+
+if 1 <= guess <= MAX_NUM
+short-hand for
+if guess >= 1 and guess <=1 MAX_NUM
+
+if you define a variable above a function, that variable is available inside the function (do not need to explicitly pass the variable inside the function)
