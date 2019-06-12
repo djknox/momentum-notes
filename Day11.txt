@@ -1,0 +1,66 @@
+Momentum - Cohort 5
+Day 11 - Tuesday, June 11, 2019
+
+/** Python - OOP **/
+object-oriented programming
+objects, classes
+magic methods
+exceptions
+
+
+
+object:
+state - data (attributes or properties)
+behavior - methods
+identity - object's class
+
+class
+blueprint for an object (an object is an instance of a class)
+students = set() --> students is an object, set is a class
+type(students) --> <class 'set'>
+classes normally have names starting with capital letters (in python, built-in classes often don't)
+named with CamelCase --> LineSegment, GarbageTruck, etc.
+
+use dir() to see all the properties + methods of an object
+anything with dunder (such as __str__ ) are private and not meant for public consumption (although nothing prevents you from using them)
+
+inheritance
+'is a'
+lets you create subclasses - classes that inherit all the behavior of their parent class but can add or override
+for a class to inherit from a superclass, put the name of the superclass in the parentheses in the class definition
+ex: class Speaker(Attendee) --> Speaker will inherit from Attendee (Speaker "is a(n)" Attendee)
+access the methods of the parent class (superclass) with super()
+
+composition
+building objects out of other objects
+
+OOP benefits
+code reuse
+improved maintainability
+forces more thought-out design
+encapsulation - once an object is created, knowledge of its implementation is not necessary to use it
+
+example class:
+class Counter:
+	"""
+	An object that can count incrementally up.
+	"""
+	def __init__(self, start=0):
+		self.current = start
+
+	def next(self):
+		self.current += 1
+		return self.current
+
+__init__ --> constructor (self is always first argument)
+
+
+exceptions
+try-except block
+try:
+	print(1 / 0)
+except ZeroDivisionError as e:
+	print("You cannot divide by zero!")
+	print(e)
+except:
+	print("Some other error happened")
