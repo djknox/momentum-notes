@@ -1,0 +1,34 @@
+Momentum - Cohort 5
+Day 12 - Wednesday, June 12, 2019
+
+/** Object-Oriented Design **/
+zed's way to design software from "learn python the hard way":
+1. write down/draw the problem
+2. extract key concepts from 1
+	nouns can be classes, verbs can be their methods
+3. create class hierarchy and object map for the concepts in 2
+4. code the classes and test
+5. repeat and refine
+
+crc cards
+class-responsibility-collaborator
+
+oop principles
+SOLID:
+single-responsibility - for every object, it should have only one reason to change
+open-closed
+liskov substitution
+interface segregation
+dependency inversion
+
+RISE:
+replicate existing interfaces
+isolate side effects
+single responsibility principle
+easily testable
+
+PER:
+principle of essential representation
+	a definition should contain all essential definitions
+	(for a class: the definitions of its methods, properties and events)
+	all inessential definitions should be contained in other, related definitions
