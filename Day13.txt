@@ -1,0 +1,8 @@
+Momentum - Cohort 5
+Day 13 - Thursday, June 13, 2019
+
+/** Test-Driven Development **/
+also known as red-green-refactor
+1. write a test
+2. make the test pass
+3. refactor your code

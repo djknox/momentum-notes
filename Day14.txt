@@ -1,0 +1,13 @@
+Momentum - Cohort 5
+Day 14 - Thursday, June 14, 2019
+
+/** Alumni Panel **/
+Rondale Davis - foodlogic - junior dev ops - cohort 3
+Mo - Duke - front-end - cohort 3
+Dan Coda - cohort 2 - IBM
+Juan - cohort 4
+Crystal - cohort 1 - spreedly - tech support engineer
+
+
+payscale.com - finding salary ranges for your position/career
+exercism.io - code problems for practice
