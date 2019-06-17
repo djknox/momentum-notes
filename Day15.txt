@@ -1,0 +1,114 @@
+Momentum - Cohort 5
+Day 15 - Thursday, June 17, 2019
+
+Group H
+
+Mae Beale (past Iron Yard cohort) came in and gave advice
+
+use PyPI.org to find libraries
+- check GitHub stars, documentation, and date of most recent commit to help choose which library to work with
+
+/** Django - Part One **/
+How The Web Works - https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works
+clients and servers:
+clients - device + software that accesses web (such as a browser)
+servers - computers that store webpages, sites, apps, etc
+client downloads copy of webpage/site from server to display in browser
+
+what happens when you type a URL into the browser:
+1. browser goes to the DNS server to find the IP address
+2. browser sends HTTP request to the server asking it to send a copy of the website to the client (all data is sent over TCP/IP)
+3. if server approves the request, the server sends the website's files to the browser in small chunks called data packets
+4. the browser assembles the packets into a complete website to display
+
+
+Django's Architecture
+when browser makes a request to the Django app, the URL dispatcher (urls.py) finds the view function for that URL and calls it
+the view function (views.py) is called with the web request from the URL - it usually uses Django models to CRUD data
+Django form objects are used when the request is for a page that shows or submits a form - may interact with Django models to CRUD data
+the view function tells the browser to redirect or returns a response
+Django creates HTML by using templates, which use the Django Template Language for displaying data from the view function
+
+
+
+MDN Django Tutorial
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
+Due Tuesday: Chapters 1-4
+Due Wednesday: Chapters 5 and 6
+Due Thursday: Chapters 7-9
+
+Django Introduction
+Django uses "shared-nothing" architecture, where each part is independent of each other
+Django was initially developed between 2003-2005 by team responsible for newspaper websites
+Open-sourced in July 2005
+High-profile sites that use Django include: Disqus, Instagram, Knight Foundation, MacArthur Foundation, Mozilla, National Geographic, Open Knowledge Foundation, Pinterest, and Open Stack
+Django uses MVT (Model-View-Template), which has similarities to MVC
+
+urls.py - contains a url mapper that connects a route to a view function
+views.py - usually stores view functions that take an HttpRequest object and return an HttpResponse object
+models.py - contains classes that represent data models (define the structure of models here)
+
+view functions take a request, queries some data, and passes the data to a view template
+django also includes:
+forms
+user auth and permissions
+caching
+admin
+serializing data (easily serve data as XML or JSON)
+
+
+Setting Up a Django Development Environment
+Django provides a set of python scripts for creating and working with Django projects + a development web server
+Django supports four main databases: PostgreSQL, MySQL, Oracle, and SQLite
+Django uses SQLite by default in a new project
+django-admin startproject <project_name> - start a new django project called project_name
+python3 manage.py runserver - start webserver
+
+
+Django Tutorial: The Local Library website
+create a django project to display a library's catalog of books
+finished source here - https://github.com/mdn/django-locallibrary-tutorial
+
+Django Tutorial Part 2: Creating a skeleton website
+a website may consist of one or more sections (main site, wiki, blog, etc.) - django encourages development of these sections as separate applications
+will register each application to include them in the project + hook up the url/path mapper for each application
+
+creating a new django project:
+mkdir <directory_to_hold_project>
+cd <directory_to_hold_project>
+git init
+pipenv install django
+pipenv shell
+django-admin startproject <name_of_project> .
+
+files in django project:
+manage.py - used to create apps, work with databases, and start the dev server
+__init__.py - instructs python to treat this directory as a python package
+settings.py - register applications, locations of static files, db config details, etc
+urls.py - maps urls to views 
+wsgi.py - helps django app communicate with web server
+
+starting a new application:
+python3 manage.py startapp <name_of_app> - sets up a new application
+
+registering a new application:
+in the project's settings.py file, add to INSTALLED_APPS list
+
+settings.py file also includes database configuration, time zone config, SECRET_KEY, and DEBUG config settings that will need to be configured
+
+running database migrations:
+python3 manage.py makemigrations
+python3 manage.py migrate
+run these commands every time the data model(s) change
+
+
+Django Tutorial Part 3: Using models
+Django web apps access and manage data through objects referred to as models
+models define the structure of stored data
+the definition of a model is independent of the underlying database
+
+when designing models, it makes sense to have a separate model for each "object"
+create models, define their fields, and define their relationships
+models are usually defined in app's models.py file
+model definitions can also have metadata (class Meta inside model class) for ordering, verbose_name, etc.
+model definitions can also have methods
