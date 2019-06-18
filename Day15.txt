@@ -31,7 +31,7 @@ Django creates HTML by using templates, which use the Django Template Language f
 
 
 
-MDN Django Tutorial
+/** MDN Django Tutorial **/
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
 Due Tuesday: Chapters 1-4
 Due Wednesday: Chapters 5 and 6
@@ -112,3 +112,9 @@ create models, define their fields, and define their relationships
 models are usually defined in app's models.py file
 model definitions can also have metadata (class Meta inside model class) for ordering, verbose_name, etc.
 model definitions can also have methods
+
+
+Django Tutorial Part 4: Django admin site
+Django admin app can use the defined models to automatically build an admin panel for CRUD
+only need to register models in admin.py to add them to the admin panel
+customize how records are displayed in the admin panel by adding classes derived from admin.ModelAdmin to admin.py

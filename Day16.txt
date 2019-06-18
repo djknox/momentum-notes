@@ -1,0 +1,56 @@
+Momentum - Cohort 5
+Day 16 - Thursday, June 18, 2019
+
+Group H
+
+remove a file from git but not from disk
+git rm --cached <file_name>
+
+
+/** Django - Part Two **/
+python3 -m django --version --> check version of django
+
+on_delete when creating foreign keys (when parent record is deleted, what to do with children?)
+CASCADE - cascade deletes
+PROTECT - don't allow deletion of parent record when children exist
+
+be sure to register apps in INSTALLED_APPS list in settings.py after creating them
+
+
+/** Jason Draper - Imposter Syndrome **/
+@drapergeek
+drapergeek.com
+
+day one app for journaling each day - https://dayoneapp.com/about/
+
+
+/** MDN Django Tutorial **/
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
+Due Tuesday: Chapters 1-4
+Due Wednesday: Chapters 5 and 6
+Due Thursday: Chapters 7-9
+
+Django Tutorial Part 5: Creating our home page
+url mappers forward the supported urls to their corresponding view functions
+view functions get the requested data from the model and create html pages to return
+templating language:
+tags are enclosed in {% --> {% extends "base_generic.html" %}
+variables are in handlebars --> {{ num_books }}
+variable are passed into the template by the view function's render() function
+referencing static files in templates --> {% load static %} and then {% static <path_to_static_resource> %}
+default setting of STATIC_URL is '/static/'
+linking to urls --> {% url <name_of_path_function_from_urls.py> %}
+have to tell django to find the templates in the /templates directory by adding it to the TEMPLATES object in settings.py
+
+
+Django Tutorial Part 6: Generic list and detail views
+class-based views
+in urls.py: use as_view() function - does all the work of creating an instance of the class and making sure that the right handler methods are called for incoming http requests
+in views.py: create class that inherits from generic.ListView
+in template: reference the list of objects with <class_name>_list --> book_list
+
+can use if-statements and for-loops within templates --> {% if ... %}, {% for ... %}, etc.
+access fields of variables with dot-notation --> {{ book.author }}
+
+in url maps, can pass additional options in a dictionary as the third argument to path()
+ex: path('url/', views.my_reused_view, {'my_template_name': 'some_path'}, name='aurl')
