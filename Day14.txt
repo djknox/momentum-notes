@@ -1,5 +1,5 @@
 Momentum - Cohort 5
-Day 14 - Thursday, June 14, 2019
+Day 14 - Friday, June 14, 2019
 
 /** Alumni Panel **/
 Rondale Davis - foodlogic - junior dev ops - cohort 3

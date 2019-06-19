@@ -1,6 +1,5 @@
 Momentum - Cohort 5
-Day 16 - Thursday, June 18, 2019
-
+Day 16 - Tuesday, June 18, 2019
 Group H
 
 remove a file from git but not from disk

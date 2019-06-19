@@ -1,0 +1,59 @@
+Momentum - Cohort 5
+Day 17 - Wednesday, June 19, 2019
+Group H
+
+2:45pm - Avalara Field Trip
+
+/** Django - Part Two **/
+Django third-party libraries
+Django Debug Toolbar
+pipenv install django-debug-toolbar
+
+
+/** MDN Django Tutorial **/
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
+Due Tuesday: Chapters 1-4
+Due Wednesday: Chapters 5 and 6
+Due Thursday: Chapters 7-9
+
+
+Django Tutorial Part 7: Sessions framework
+all communication between clients and servers is via HTTP and is stateless
+sessions are the mechanism for maintaining state between a site and a particular browser
+session data is referenced by key, which is used to store and retrieve data
+Django uses a cookie containing a session id - identifies each browser and its associated session with the site
+session data is stored in the database by default, but can be configured to be stored in cache, files, etc.
+session configuration is done in INSTALLED_APPS and MIDDLEWARE in settings.py file
+
+in views, can access the session attribute from the request parameter --> request.session
+session attribute represents the the connection to the current browser, according to the session id in the browser's cookie
+session attribute is a dict-like object that can be modified like a normal dictionary
+usually use dict API to get and set values --> my_car = request.session.get('my_car', 'mini')
+django saves to the session database and sends the cookie to the client when the session has been modified or deleted
+if updating data within session data, need to explicitly mark the session modified --> request.session.modified = True
+
+
+Django Tutorial Part 8: User authentication and permissions
+Django provides an authentication and authorization system built on top of the session framework
+can verify user credentials and define which actions each user is allowed to perform
+includes built-in models for Users and Groups, flags that designate whether or not a user may perform a task, forms and views for logging in, and view tools for restricting content
+
+authentication
+authentication configuration done automatically with django-admin startproject command
+configuration set up in INSTALLED_APPS and MIDDLEWARE sections of settings.py
+python3 manage.py createsuperuser - creates super user that has all permissions
+get information about currently-logged in user with {{ user }} template variable --> user.is_authenticated
+in function-based views, can use @login_required decorator to a view function
+another way is to test on request.user.is_authenticated
+for class-based views, derive the class from LoginRequiredMixin
+
+permissions
+in a model, define permissions in the 'class Meta' section with the 'permissions' field
+in a template, reference permissions with {{ perms }} --> {% if perms.catalog.can_mark_returned %} ... {% endif %}
+in a view function, use @permission_required decorator
+in a class-based view, import and derive the class from PermissionRequiredMixin
+
+Django Tutorial Part 9: Working with forms
+Django Forms provide a framework for programmatically define forms and their fields, then use those objects to both generate the html for the forms and handle their validation and user interaction
+the admin panel uses Django Forms
+
