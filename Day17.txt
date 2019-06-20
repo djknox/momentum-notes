@@ -56,4 +56,29 @@ in a class-based view, import and derive the class from PermissionRequiredMixin
 Django Tutorial Part 9: Working with forms
 Django Forms provide a framework for programmatically define forms and their fields, then use those objects to both generate the html for the forms and handle their validation and user interaction
 the admin panel uses Django Forms
+main things that Django's form handling does:
+- display unbound form (form with no user-entered data, although there may be pre-populated fields)
+- receive data from a submit request and bind data to the form
+- clean and validate the data
+- if invalid data, re-display the form with error messages
+- if data is valid, perform the required actions and redirect the user to another page
+Form class simplifies form generation and data cleaning/validation
+to declare a form, import Form class and derive a new class from Form --> class RenewBookForm(forms.Form)
+
+validation
+to make custom validation for a single field, override the clean_<field_name>() method in the form class
+raise a ValidationError when data is invalid
+
+in templates, add {% csrf_token %} to any forms that POST data (cross-site request forgery protection)
+can reference form fields with dot-notation --> {{ form.renewal_date }}, {{ form.renewal_date.errors }}
+
+modelforms
+use ModelForm helper class uses model definitions to generate forms
+import ModelForm and derive the form class from ModelForm
+add class Meta: and define the model and the form fields
+
+generic editing views
+Django abstracts boilerplate for creating/editing/deleting records with generic editing views based on models
+import and derive classes from CreateView, UpdateView, DeleteView --> class AuthorCreate(CreateView)
+in the class, define the model and the form fields
 

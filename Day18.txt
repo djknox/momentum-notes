@@ -1,0 +1,30 @@
+Momentum - Cohort 5
+Day 18 - Thursday, June 20, 2019
+Group H
+
+Weekend assignment: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/django_assessment_blog
+
+/** Django - Part Three **/
+html forms
+action - url to send form to
+method - HTML verb (GET/POST/etc.)
+
+pluralize is a template filter that will pluralize a word if there is more than one of the variable
+{{ card_count }} card{{ card_count|pluralize }} --> 1 card, 2 cards
+
+
+/** MDN Django Tutorial **/
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
+
+Django Tutorial Part 10: Testing a Django web application
+Django has a test framework for automating unit tests, built on the unittest library
+unit tests - verify functional behavior of individual components (usually class and function level)
+regression tests - tests that reproduce bugs and verify that it has been fixed
+integration tests - verify how groupings of containers work with each other
+to write a test, derive a class from any of the Django test base classes
+setUp() and tearDown() methods can be defined and will be run for each test execution
+django.Test.TestCase will create a clean database before running tests and execute each test as a transaction
+unittest will discover tests under the current working directory that start with test --> test_models.py
+setUpTestData() - called once at the beginning of the test run
+setUp() - called before every test function
+python3 manage.py test - run all tests in directory
