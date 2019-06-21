@@ -28,3 +28,7 @@ unittest will discover tests under the current working directory that start with
 setUpTestData() - called once at the beginning of the test run
 setUp() - called before every test function
 python3 manage.py test - run all tests in directory
+to validate view behavior, use the django.test.Client class to make requests
+other testing tools:
+coverage.py - reports on how much of your code is being tested 
+selenium - framework to automate testing in a real browser

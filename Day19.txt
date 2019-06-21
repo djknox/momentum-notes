@@ -1,0 +1,53 @@
+Momentum - Cohort 5
+Day 19 - Friday, June 21, 2019
+Group H
+
+Weekend assignment: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/django_assessment_blog
+
+/** Corey Brown, Django **/
+Senior Software Developer - U.S. News & World Report
+
+Lessons:
+Failure is an option
+Well-written documentation is important
+Speaking precisely is important
+Imposter syndrome is real
+Small businesses and startups can be a great experience
+Startups are hard work
+Trust the company as far as you can throw it
+Manage expectations
+
+How does U.S. News use Django?
+React front-end
+Real Estate - Best Places to Live, Best Agents
+Autos
+Travel
+1000s of users at a time
+10s of millions of monthly page-views
+
+Modeling data in Django
+structured vs unstructured data (organized vs unorganized data)
+Normalization
+Entity-attribute-value
+
+ElasticSearch is great for building search engines
+check out challenge.gov
+
+
+
+
+/** Q&A **/
+Can we run through tracing a URL and where it is all affected?
+what pages need to have content in them for the url to show up etc...
+
+When do we need to add an "id" attribute to a class like we did with the BookInstance class?
+when you want to make a unique version of a primary key (otherwise, models.Model will automatically give your class an id attribute when you derive from it)
+
+When do you make migration? After which changes? 
+When you make a change to a model
+
+Why are model names singular in their naming scheme?
+a model represents a class - so an instance of a class (an object) will be singular
+
+Are templates and forms the same - but one for front end and one for back end?
+forms are objects that will be passed into templates by views
