@@ -1,0 +1,49 @@
+Momentum - Cohort 5
+Day 20 - Monday, June 24, 2019
+Group H
+
+/** Models **/
+Field.default - set the default value for a field
+
+data migrations
+python manage.py makemigrations --empty yourappname --> create empty migration to write
+
+.objects - Object Manager
+ex: Book.objects.all()
+.get() - returns single instance if a single instance exists, or raises an Exception if it doesn't exist or there are multiple instances that exist --> Card.objects.get(pk=1)
+.filter() - returns a query set (or empty query set if no matches) --> Card.objects.filter(times_correct=0)
+.exclude() - opposite of filter()
+
+traversing relationships:
+<related_model>_set --> stack.card_set - card_set is all of stack's cards
+same as Card.objects.filter(stack=stack) - filter Card objects that belong to stack
+can change related_name argument when defining a relationship to change name (default related_name="<related_object>_set")
+
+auto_now_add = True
+auto_now --> automatically set the datetime whenever the object is saved --> good for last_modified fields
+auto_now_add --> automatically set the datetime when the object is created --> good for created_at fields
+
+field lookups
+__ after field name being filtered on --> Entry.objects.get(id__exact=14)
+
+field lookups that span relationships
+__ after related object being filtered on --> Entry.objects.filter(blog__name='Beatles Blog')
+
+
+
+/** Freeshelf App **/
+
+Users can:
+	see a list of all the books
+	register and log in
+	favorite books
+
+A Book has a:
+	title
+	author
+	url (unique)
+	description
+	created_date
+
+An Author has a:
+	name
