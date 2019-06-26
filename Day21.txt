@@ -1,0 +1,33 @@
+Momentum - Cohort 5
+Day 21 - Tuesday, June 25, 2019
+Group H
+
+/** User Authentication **/
+django has a built-in User model
+request.user will return an AnonymousUser object if no user is logged in
+can also just call user in templates, rather than request.user
+
+user registration
+third-party library - django registration redux
+https://django-registration-redux.readthedocs.io/en/latest/
+pipenv install django-registration-redux
+add 'registration' to INSTALLED_APPS (above django.contrib.admin)
+add ACCOUNT_ACTIVATION_DAYS to settings.py
+migrate
+add urls
+
+
+
+template language has a for ... empty loop that will loop through an iterable or display something else if the iterable is empty
+ex:
+{% for athlete in athlete_list %}
+    <li>{{ athlete.name }}</li>
+{% empty %}
+    <li>Sorry, no athletes in this list.</li>
+{% endfor %}
+
+
+/** Freeshelf App **/
+Goal 1: books - Stretch goals
+Allow users to change the order of books, ordering by title or by reverse order of being added.
+use links with "GET" parameters --> &sort_by="title", &sort_by="reverse", etc. 
