@@ -1,0 +1,34 @@
+Momentum - Cohort 5
+Day 22 - Wednesday, June 26, 2019
+Group H
+
+/** User Authorization **/
+decorators
+ex:
+from django.contrib.auth.decorators import login_required
+@login_required
+def my_view_function(request)...
+a decorator is a function that takes a function as an argument and returns a function
+
+http responses
+from django.http import HttpResponse
+return HttpResponse(status=403)
+
+use redirect() after form submissions
+
+
+/** Sessions **/
+sessionid in cookie
+
+flash messaging:
+django has a messages framework
+in a view:
+from django.contrib import messages
+messages.add_message(request, messages.INFO, 'this is the text of the message')
+also shortcuts like messages.success(request, 'your card was created!')
+then need to display in view --> {% if messages %} ...
+
+
+/** Views **/
+.as_view() - constructor for a class-based view to make it work as a function-based view
+ex: StackListView.as_view()
