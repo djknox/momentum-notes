@@ -1,0 +1,22 @@
+Momentum - Cohort 5
+Day 23 - Thursday, June 27, 2019
+Group H
+
+/** Deployment **/
+Deploying a Django app to Heroku
+heroku login --> login to heroku
+heroku git:remote -a <heroku-app-name> --> add a remote repository to your git repo for heroku
+brew install postgresql --> install postgresql
+pipenv install django-heroku --> install django-heroku in django app
+add django-heroku to settings.py
+commit code
+pipenv install django-gunicorn --> install gunicorn (green unicorn) in django app
+add a new file called Procfile: web:gunicorn <project_dir>.wsgi
+git push heroku master --> push to heroku remote repo (this will deploy to heroku)
+heroku run python3 manage.py manage.py migrate --> run migrations on heroku
+heroku run python3 manage.py createsuperuser --> create a superuser on heroku
+heroku config:set SECRET_KEY=$(date | md5) --> generate a secret key on heroku
+--> set DEBUG = False in settings.py
+heroku config:set PRODUCTION=True --> set PRODUCTION env variable in heroku to True
+
+if you change the SECRET_KEY, users will be logged out
