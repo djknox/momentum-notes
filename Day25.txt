@@ -1,0 +1,81 @@
+Momentum - Cohort 5
+Day 25 - Monday, July 1, 2019
+Group H
+
+null=True --> database will accept null value into field
+blank=True --> form will accept empty strings into field
+
+/** Group Assignment - Habit Tracker **/
+Models:
+User
+Habit
+	- name
+	- description
+	- target
+DailyRecord
+	- date
+	- date number
+	- description
+	- progress
+Observer
+	- is a User
+	- observes many Habits
+Comment
+	- has a User
+	- has a DailyRecord
+	- text
+
+Goal 1: Habits
+User creates a Habit:
+	name = "1000 Steps Each Day"
+	description = "I want to walk 1000 steps daily."
+	target = 1000
+
+User creates a DailyRecord for that Habit:
+	day_number = 1
+	date = July 1, 2019
+	description = "I walked 1014 steps today."
+	progress = 1014
+	met_goal = daily_record.progress >= daily_record.habit.target --> True
+
+User creates another DailyRecord for that Habit:
+	day_number = 2
+	date = July 2, 2019
+	description = "I walked 513 steps today."
+	progress = 513
+	met_goal = daily_record.progress >= daily_record.habit.target --> False
+
+Goal 2: Accountability
+User can add Users to observe a Habit
+User can see their own Habit(s) + Habit(s) of the users they are observing
+
+
+
+
+Views:
+User can view all their Habits --> '/' that redirects to '/habits/' - DJ
+User can create a new Habit --> '/habits/create/' - DJ
+User can view a specific Habit --> 'habits/<int:pk>/' -- Meagan
+User can add a DailyRecord to a Habit --> '/habits/<int:pk>/new-record/' - DJ
+User can edit a DailyRecord --> '/dailyrecords/<int:pk>/' -- Meagan
+
+
+
+
+
+
+
+
+
+/** Collaborating with Git **/
+git push --> put new changes on GitHub
+git fetch -p --> grab new changes from GitHub (but don't merge into local repo) (-p --> 'prune')
+git pull --> grab new changes from GitHub and merge into local repo
+
+push feature branch to GitHub (need to set up new remote branch)
+create PR to merge feature branch into master
+
+
+
+/** Rachael Meleny, RIoT **/
+Guest lecture on Internet of Things

@@ -1,0 +1,37 @@
+Momentum - Cohort 5
+Day 24 - Friday, June 28, 2019
+Group H
+
+/** Amy Gori - Git **/
+Using Git + GitHub with a Team
+git log --oneline --> puts each commit message on one line
+
+Production Branch --> Feature Branches
+Production Branch --> Development Branch --> Feature Branches
+
+setup:
+1. one person creates the repo and adds others as collaborators
+2. clone the repo so each collaborator has a local copy
+3. create and work on feature branches
+4. name each branch something descriptive of the work being done
+5. discuss as a team how you will work together and communicate
+
+GitHub-only concepts:
+pull requests
+forks
+
+your workflow:
+git pull origin master  --> make sure local master is up to date
+git merge master --> merges your local master into the feature branch
+git push origin feature-branch
+
+commit often
+pull often - so you will have your colleagues' work
+push often - to keep your remote branch up to date
+pull request - so team members can review your work
+merge
+
+merging strategy:
+merge remote master to local master
+merge master to feature branch
+merge feature branch to master --> via a PR
