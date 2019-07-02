@@ -1,0 +1,17 @@
+Momentum - Cohort 5
+Day 26 - Tuesday, July 2, 2019
+
+/** ManyToMany Relationships **/
+
+/** Aggregations **/
+"On the detail page for a habit, show the best day for that habit, and the average day for that habit."
+habit = Habit.objects.annotate(best_day=Max("daily_records__progress"))... --> now have habit.best_day
+habit = Habit.objects.annotate(avg_day=Avg("daily_records__progress"))... --> now have habit.avg_day
+
+aggregate() - will return a value calculated over an entire query set
+annotate() - will add the value to each model instance in the query set
+
+
+/** Calvin Spealman - Testing **/
+fuzz testing - randomly generating test parameters
+write tests based on goals, not on the code being tested
