@@ -1,0 +1,50 @@
+Momentum - Cohort 5
+Day 28 - Monday, July 8, 2019
+Group H
+
+TopTal
+
+JavaScript - Part One
+1995 - Brandon Eich designs JS
+2006 - AJAX and jQuery popularized
+2017 - JS is most-used language
+
+/** JS for Python developers **/
+let + const - declare variables --> let currentUser = 'Blake'
+data types:
+- boolean (true/false)
+- number (no integers - all floats)
+- string
+- null (like None in Python)
+- undefined
+template literals (string interpolation like f-strings in python) --> let greeting = `Hello, ${person}!`
+object keys are always strings --> let fruits = {"apple": 10}
+
+False in JS: null, false, undefined, 0, ""
+Not False in JS: [], {} (empty array or object)
+
+functions:
+function add(x, y) {
+	return x + y;
+}
+
+always use === instead of == in comparisons
+
+letter of letters - loops over values
+letter in letters - loops over keys
+
+classes and objects (diffs between js and python)
+this instead of self
+new Book() instead of Book()
+constructor() instead of __init__()
+
+arrow functions
+this function:
+const greaterThan50 = function(num) {
+	return num > 50;
+}
+--> nums.filter(greaterThan50)
+
+can become this:
+num => num > 50
+--> nums.filter(num => num > 50)
