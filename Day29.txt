@@ -1,0 +1,33 @@
+Momentum - Cohort 5
+Day 29 - Tuesday, July 9, 2019
+Group H
+
+JavaScript - Part Two
+
+/** JavaScript and the DOM **/
+DOM - Document Object Model --> represents the HTML document as nodes and objects
+document --> the html document
+document.getElementById('theElementsId'), document.querySelector('#theElementsId'), etc.
+
+VSCode Plugin - "Live Server" --> auto-reloading
+
+defer --> <script src="main.js" defer></script>
+defer will wait to load the js until the rest of the page loads
+
+js events - user interactions create events on the page that js can respond to
+event handling:
+	- select the DOM node
+	- choose the event that will be the trigger
+	- specify the function that will be triggered by the event
+let button = document.querySelector('.cancelButton')
+button.addEventListener('click', function () {
+  alert('Are you sure you want to cancel?')
+})
+
+/** Calculator Assignment **/
+can use math.evaluate() from math.js library if don't want to use eval()
+
+
+
+/** Guest Speaker **/
+David Yarwood, Adzerk
