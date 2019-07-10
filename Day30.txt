@@ -1,0 +1,31 @@
+Momentum - Cohort 5
+Day 30 - Wednesday, July 10, 2019
+Group H
+
+JavaScript - Part Three
+
+/** AJAX **/
+document.addEventListener('DOMContentLoaded', function () {
+}) --> will wait until the page is totally ready (like 'defer' in <script>)
+
+fetch()
+- built-in JS to make asynchronous http requests
+fetch('http://example.com/movies.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(JSON.stringify(myJson));
+  });
+
+
+/** Guest Speaker: John Samuel from LC Industries, Accessibility **/
+POUR acronym for accessbility principles:
+p - perceivable
+o - operable
+u - understandable
+r - robust
+
+should use page-specific <title> tags
+heading tags should follow hierarchy (don't jump from <h1> to <h3>, go from <h1> to <h2> to <h3>, etc.)
+use <main> for main content
