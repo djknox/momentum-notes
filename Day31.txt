@@ -1,0 +1,20 @@
+Momentum - Cohort 5
+Day 31 - Thursday, July 11, 2019
+Group H
+
+JavaScript - Part Four
+
+/** Promises **/
+promises are objects that resolve (as opposed to functions that return)
+technique for asynchronous programming
+.then()
+usually have two .then() calls:
+- transform data 
+- do something with data
+
+.catch()
+handles error states
+
+
+
+/** Event Delegation **/
