@@ -1,0 +1,22 @@
+Momentum - Cohort 5
+Day 32 - Friday, July 12, 2019
+Group H
+
+/** Career Services Module #1 **/
+Key Takeaways:
+- Finding a job is a full-time job
+- The process is an art, not a science
+- People hire people
+
+Interview Process:
+Application --> Phone Screen --> Code Challenge --> Interview
+
+Where to find job postings:
+Cohort Trello Board
+Company Websites
+LinkedIn
+jobs.github.com
+jobs.juniorsintech.com
+bigtop.co
+weworkremotely.com
+ziprecruiter.com
