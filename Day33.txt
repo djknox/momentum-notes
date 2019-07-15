@@ -1,0 +1,25 @@
+Momentum - Cohort 5
+Day 33 - Monday, July 15, 2019
+Group Assignment - Group A
+
+Django + JavaScript - Part One
+
+Static files will not be served normally when Django is DEBUG=False
+
+returning JSON from a view function:
+JsonResponse class
+return JsonResponse()
+
+why to keep javascript minimal:
+- SEO (search engine indexing doesn't necessarily wait for JS to load)
+
+request contains:
+url
+http verb
+headers
+body (optionally/if submitting a form/etc.)
+
+response contains:
+status code
+headers
+body
