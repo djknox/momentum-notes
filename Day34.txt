@@ -1,0 +1,29 @@
+Momentum - Cohort 5
+Day 34 - Tuesday, July 16, 2019
+Group Assignment - Group A
+
+/** Node.js **/
+npm install -g browserify
+browserify - generates a dependencies file from js files
+watchify - watches for changes and re-compiles (runs browserify) every time there are changes
+babel - will compile js into browser-compatible js (ex: ES6 arrow functions into conventional functions)
+webpack - compiles assets
+npm install standard --global --> globally install standard.js
+
+npm uses package.json
+npm install --> creates node_modules/ and puts all dependencies listed in package.json inside
+npm install js-cookie --> installs js-cookie package and puts code in node_modules and lists it in package.json
+
+
+/** jQuery **/
+$("button.continue").html("Next Step...") --> get <button class="continue"> and change its innerHTML to "Next Step..."
+
+
+/** Wren Lanier - UI/UX @2pm **/
+Wren Lanier - heywren@gmail.com
+Head of UX, Apiture
+
+UX Tools: Sketch + InVision, Figma
+
+Roles:
+Product Management <--> Design <--> Development
