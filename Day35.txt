@@ -1,0 +1,73 @@
+Momentum - Cohort 5
+Day 35 - Wednesday, July 17, 2019
+Group Assignment - Group A
+
+In order to require() a javascript module, will need to define module.exports in that module:
+// require requests.js in another js file
+const requests = require('./requests')
+// in requests.js
+module.exports = {
+	'getRandomCard': getRandomCard
+}
+
+import + export are newer versions of require() + module.exports
+
+/** REST/APIs **/
+nouns --> resources
+verbs --> actions
+
+PUT vs PATCH:
+PUT - replace fully
+PATCH - update partially
+
+Python Library --> Requests
+// in shell
+pipenv install requests
+// in python
+import requests
+requests.get('https://....')
+
+
+/** Sending Email with Django **/
+smtp = simple mail transfer protocol
+"When a user answers a question, the question's author should receive an email with a link to the answer."
+
+email configuration
+// settings.py
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL
+
+
+// in python
+from django.core.mail import send_mail
+
+send_mail(
+    'Subject here',
+    'Here is the message.',
+    'from@example.com',
+    ['to@example.com'],
+    fail_silently=False,
+)
+
+in production (heroku):
+heroku add-ons --> email/sms --> sendgrid
+configure heroku environment variables for name, password, and api key
+set up variables in settings.py for sendgrid
+
+look into signals --> django events
+
+compiling javascript on heroku (don't commit compiled assets):
+heroku build-packs
+heroku buildpacks:set heroku/python
+heroku buildpacks:add --index 1 heroku/nodejs
+(need to add build step in package.json --> "scripts")
+
+npm install npm-run-all --> npm-run-all can run multiple scripts at the same time (such as runserver and watchify)
+
+
+/** Sanitizing HTML **/
+From assignment:
+"Python-Markdown can turn Markdown into HTML for you. You will also want to prevent people from putting unauthorized HTML into your Markdown code. Using Bleach and bleach-whitelist should help with that."
+
+https://bleach.readthedocs.io/en/latest/clean.html
+bleach.clean() --> cleans an html fragment of malicious content
