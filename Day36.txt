@@ -1,0 +1,27 @@
+Momentum - Cohort 5
+Day 36 - Thursday, July 18, 2019
+Group Assignment - Group A
+
+Django sites framework lets you map apps to subdomains (ex: api.my-site.com vs my-site.com/api)
+
+/** APIs **/
+Django REST Framework
+pipenv install djangorestframework
+django rest framework automatically creates a browsable api
+
+APIs change over time --> have to version them for backwards compatibility
+
+
+/** Sally Hall - Agile @2:00pm **/
+no-show
+
+Agile w/ Clinton
+some core principles:
+deliver often
+get continuous feedback
+defer decisions until necessary
+
+stand-up questions:
+what did you do yesterday?
+what are you doing today?
+any blockers?
