@@ -1,0 +1,56 @@
+Momentum - Cohort 5
+Day 38 - Monday, July 22, 2019
+Group Assignment - Group A
+
+This Week:
+Monday - Google forms sent to collect final project ideas
+Wednesday - Google forms due
+Thursday - projects will be selected to be pitched
+Friday - pitch presentations
+vote on three favorite projects
+teams are assigned and announced
+
+
+/** Environment Variables in Local Development **/
+export SECRET_KEY=my-secret-key --> will set an environment variable in a specific shell session
+.ENV files --> 
+tools:
+direnv
+django-environ
+
+
+/** Creating Agile Backlogs **/
+Backlog - items to work on
+Requirements - one-page document with goals, objectives, and assumptions
+- goals - overall idea of why work is being done
+	"our app will empower parents in the triangle to..."
+- objectives - what needs to be done
+- assumptions - technical - what you can do, can't do, etc.
+	"we are using postgresql, users will need file uploads so we are using AWS, etc."
+
+Roadmap - several "epics", or categories of major features
+	each epic has user stories related to that suite of features
+
+User Stories
+"As a student, I want to see a list of upcoming class events so that I can plan accordingly"
+business functionality - user-focused
+three parts: card, conversation, and confirmation
+- card - represents the story
+- conversation - notes about discussions and agreements
+- confirmation - acceptance criteria (what makes this "done"?)
+
+Scrum / Kanban Columns:
+Backlog, In Progress, Done
+
+Project - Astronomy Site
+put in your location and get a personalized calendar of astronomical events
+upload images and get answers to questions
+mobile web app helps orient you to find specific stars, constellations and astronomical events (comets, etc.)
+-- come up with user stories + acceptance criteria
+
+As a <role or persona>, I can <goal/need> so that <why>
+
+
+/** Merge Conflicts **/
+
+.gitconfig - file to configure git, can set up aliases for git commands
