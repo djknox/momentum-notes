@@ -1,0 +1,33 @@
+Momentum - Cohort 5
+Day 39 - Tuesday, July 23, 2019
+Group Assignment - Group A
+
+This Week:
+Monday - Google forms sent to collect final project ideas
+Wednesday - Google forms due
+Thursday - projects will be selected to be pitched
+Friday - pitch presentations
+vote on three favorite projects
+teams are assigned and announced
+
+/** Vue.js - Part One **/
+.map() --> similar to Python list comprehensions
+
+
+/** Career Services Module 3 **/
+Module 3: How To Build Your Network
+
+Focus on learning
+identify common interests
+think broadly about what you can give
+find a higher purpose
+
+Attend 3 networking events between now and the end of the course
+Aim to meet at least 3 new contacts:
+- follow up with them via email
+- set up at least 1 in-person follow up meeting
+- add reflection notes of these meetings to your job search notes
+
+Update your LinkedIn recommendations
+- get 3 professional recommendations from your network listed on your profile
+- write at least 3 professional recommendations for members of your network
