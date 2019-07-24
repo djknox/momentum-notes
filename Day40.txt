@@ -1,0 +1,23 @@
+Momentum - Cohort 5
+Day 40 - Wednesday, July 24, 2019
+
+This Week:
+Monday - Google forms sent to collect final project ideas
+Wednesday - Google forms due
+Thursday - projects will be selected to be pitched
+Friday - pitch presentations
+vote on three favorite projects
+teams are assigned and announced
+
+
+/** Review: Ajax **/
+ajax - send requests and get responses without reloading the page
+
+
+Final Project Ideas:
+- have real users / real-world application
+
+Pitches
+- what is the problem
+- what you are bringing to the project
+- what you need / what types of skill sets would be valuable
