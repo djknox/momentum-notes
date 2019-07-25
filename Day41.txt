@@ -1,0 +1,34 @@
+Momentum - Cohort 5
+Day 41 - Thursday, July 25, 2019
+
+This Week:
+Monday - Google forms sent to collect final project ideas
+Wednesday - Google forms due
+Thursday - projects will be selected to be pitched
+Friday - pitch presentations
+vote on three favorite projects
+teams are assigned and announced
+
+Clinton's Tips:
+1. Avoid comments
+	- split code into functions
+	- name functions well/appropriately
+2. "Never use a plugin that you wouldn't be able to write yourself" -James Buck
+3. Use simple tools
+4. Working code is good code
+5. Simplify your code
+6. Don't be afraid to delete code
+7. Prefer data
+8. Always do the hard thing
+9. Be liberal in what you accept, conservative in what you transmit
+
+Blog post: https://dreisbach.us/articles/new-developer-advice/
+
+
+Code Practice:
+exorcism
+code wars
+
+/** Real Talk w/ Wade Minter **/
+CTO at Custom Communications
+Ruby on Rails
