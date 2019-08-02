@@ -1,0 +1,42 @@
+Momentum - Cohort 5
+Day 42 - Friday, July 26, 2019
+
+This Week:
+Monday - Google forms sent to collect final project ideas
+Wednesday - Google forms due
+Thursday - projects will be selected to be pitched
+Friday - pitch presentations
+vote on three favorite projects
+teams are assigned and announced
+
+/** Pitch Day **/
+Kyle - app to help with decision fatigue/analysis paralysis
+Michael/Daiane - connect mentors to people who have aged out of foster care
+Matt - Slackbot for Home Automation (+ Raspberry Pi + Home Assistant API)
+Bob - weather/emergency alerts
+Andy/Greg - browser-based game
+Amanda - pet care information for pet sitters
+Meagan - categorize children toys to help parents of special-needs children to find appropriate toys
+Pamela - compare Yelp ratings to Sanitation ratings
+
+Team: (Group B)
+Grub or Not
+
+For Monday:
+backlog of user stories in trello board
+- user story
+- conversation
+- acceptance criteria
+
+- make basic mockups/wireframes
+
+GitHub:
+make an organization
+make a repo under that organization
+
+
+
+create account + log in
+search a restaurant
+yelp reviews
+sanitation report
